@@ -1,9 +1,17 @@
+#调用接口时需要读取的数据库，里面已经事先生成好json数据
 db.ip=172.16.28.46
 db.sid=o46g4
 db.port=1523
 db.user=ergo_dm_src_2A
 db.pwd=ergo_dm_src_2Apwd
+#调用PA API接口，根据转换的服务器不同进行相应的修改
 callapi.url=http://172.25.16.125/restlet/v1/pa/migration/policy
+#调用接口时需要用到的授权码
 callapi.auth=Basic QURNSU46ZUJhbzEyMzQ= 
-
+#是不是调用API来生成PA数据
+callapi.indi=Y
+#是不是调用来给party生成solar数据
+callsolarparty.indi=Y
+#是不是调用来给policy生成solar数据
+callsolarpolicy.indi=Y
 

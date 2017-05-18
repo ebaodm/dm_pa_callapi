@@ -28,5 +28,10 @@ public class Pub_Variable {
 	public static String cfgtab = "T_JSON_RESPONSE";
 	public static String callURL=configure.readValue("callapi.url");
 	public static String callAuth=configure.readValue("callapi.auth");
+	
+	public static String callAPIIndi=configure.readValue("callapi.indi");
+	public static String callSolarPartyIndi=configure.readValue("callsolarparty.indi");
+	public static String callSolarPolicyIndi=configure.readValue("callsolarpolicy.indi");
+	
 
 }

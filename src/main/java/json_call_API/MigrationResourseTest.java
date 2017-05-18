@@ -112,12 +112,35 @@ public class MigrationResourseTest {
 	}*/
 
 	public static void main(String args[]) throws Exception {
-		System.out.println("I am Ready!");
-		long starttime = System.currentTimeMillis();
-		MigrationResourseTest migrationResourseTest = new MigrationResourseTest();
-		migrationResourseTest.CallAPI();
-		long endtime = System.currentTimeMillis();
-		System.out.println((endtime - starttime) / 1000 + "s");
+		String runOption="";
+		for (String str:args){
+			System.out.println(str);
+			runOption=str;
+		}
+		System.out.println("Start to run tasks......");
+		if (runOption.equals("callapi")){
+			System.out.println("Start call PA API......!");
+			long starttime = System.currentTimeMillis();
+//			MigrationResourseTest migrationResourseTest = new MigrationResourseTest();
+//			migrationResourseTest.CallAPI();
+			long endtime = System.currentTimeMillis();
+			System.out.println("Call API time is: "+(endtime - starttime) / 1000 + "s");
+			System.out.println("Finish call PA API!");
+		}
+		//party indi solar
+		else if (runOption.equals("partyindisolar")){
+			System.out.println("Start generate Party solar......");
+			
+			System.out.println("Finish generate Party solar!");
+		}
+		
+		else if (runOption.equals("partyorgsolar")){
+			System.out.println("Start generate Party solar......");
+			
+			System.out.println("Finish generate Party solar!");
+		}
+			
+		System.out.println("All tasks have been done!");
 	}
 
 }

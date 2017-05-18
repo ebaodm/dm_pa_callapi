@@ -130,7 +130,7 @@ public class MigrationResourseTest {
 		//party indi solar
 		else if (runOption.equals("partyindisolar")){
 			System.out.println("Start generate Party solar......");
-			
+			 
 			System.out.println("Finish generate Party solar!");
 		}
 		
